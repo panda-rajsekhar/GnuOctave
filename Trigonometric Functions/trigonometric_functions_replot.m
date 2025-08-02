@@ -1,18 +1,19 @@
 x = 0:pi/100:2*pi;
-
+%2d plot of sin x
 subplot(3,2,1);
 plot(x, sin(x));
 legend('sin(x)');
 title('sin(x)');
 grid on;
 
+%2d plot of cos x
 subplot(3,2,2);
 plot(x, cos(x));
 legend('cos(x)');
 title('cos(x)');
 grid on;
 
-% tan(x), mask where cos(x) is near 0
+%tan(x), mask where cos(x) is near 0
 a = tan(x);
 a(abs(cos(x)) < 0.01) = NaN;
 subplot(3,2,3);
@@ -22,7 +23,7 @@ title('tan(x)');
 ylim([-10 10]);
 grid on;
 
-% csc(x), mask where sin(x) is near 0
+%csc(x), mask where sin(x) is near 0
 b = 1 ./ sin(x);
 b(abs(sin(x)) < 0.01) = NaN;
 subplot(3,2,4);
@@ -32,7 +33,7 @@ title('csc(x)');
 ylim([-10 10]);
 grid on;
 
-% sec(x), mask where cos(x) is near 0
+%sec(x), mask where cos(x) is near 0
 c = 1 ./ cos(x);
 c(abs(cos(x)) < 0.01) = NaN;
 subplot(3,2,5);
@@ -42,7 +43,7 @@ title('sec(x)');
 ylim([-10 10]);
 grid on;
 
-% cot(x), mask where sin(x) is near 0
+%cot(x), mask where sin(x) is near 0
 d = cot(x);
 d(abs(sin(x)) < 0.01) = NaN;
 subplot(3,2,6);
