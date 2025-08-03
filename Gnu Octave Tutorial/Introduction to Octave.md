@@ -40,11 +40,9 @@ executes relatively slowly compared to pre-compiled programs written in language
 as C or Fortran. Octave is therefore perhaps not the first choice if you want to do extremely
 large scale parallelized computations, such as state-of-art weather forecasting.
 
-However, as you will experience later in the book, Octave will enable you solve very
+However, as you will experience later , Octave will enable you solve very
 advanced and computationally demanding problems with only a few instructions or
-commands and with satisfactory speed. The last chapter of this book teaches you some
-optimization techniques and how you can use C++ together with Octave to speed things up
-considerably in some situations.
+commands and with satisfactory speed.
 
 Octave is not designed to do analytical (or symbolic) mathematics. For example, it is not
 the best choice if you wish to find the derivative of a function, say f (x) = x2. Here software
@@ -57,11 +55,16 @@ basic analytical mathematics.
 It is in place to mention MATLAB. Often Octave is referred to as a MATLAB-clone (MATLAB
 is a product from MathWorksTM). In my opinion, this is wrong! Rather, Octave seeks to be
 compatible with MATLAB. However, be aware, in some cases you cannot simply execute your
-Octave programs with MATLAB and vice-versa. Throughout the book, it will be pointed out
+Octave programs with MATLAB and vice-versa. Throughout the tutorial , it will be pointed out
 where compatibility problems can occur, but we shall stick with Octave and make no special
 effort to be compatible with MATLAB.
+
+# Introduction 
+
 *Disclaimer : For the purpose of learning octave i am using Linux based operating system called Ubuntu* 
 For the simple demonstrations we will be using the terminal in Ubuntu.
+
+
 Before running octave in terminal firstly , verify that octave is installed, to do so type in the terminal  : octave --version , if its successfully installed in the system then it will show something like : 
 ```
 GNU Octave, version 8.4.0
