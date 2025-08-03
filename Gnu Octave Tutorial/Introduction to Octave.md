@@ -60,3 +60,34 @@ compatible with MATLAB. However, be aware, in some cases you cannot simply execu
 Octave programs with MATLAB and vice-versa. Throughout the book, it will be pointed out
 where compatibility problems can occur, but we shall stick with Octave and make no special
 effort to be compatible with MATLAB.
+*Disclaimer : For the purpose of learning octave i am using Linux based operating system called Ubuntu* 
+For the simple demonstrations we will be using the terminal in Ubuntu.
+Before running octave in terminal firstly , verify that octave is installed, to do so type in the terminal  : octave --version , if its successfully installed in the system then it will show something like : 
+```
+GNU Octave, version 8.4.0
+Copyright (C) 1993-2023 The Octave Project Developers.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+Octave was configured for "x86_64-pc-linux-gnu".
+
+Additional information about Octave is available at https://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit https://www.octave.org/get-involved.html
+
+Read https://www.octave.org/bugs.html to learn how to submit bug reports.
+
+```
+
+To run octave in the terminal simply type  "octave" in the terminal and hit enter. Then you should see something like 
+
+```
+octave:1> 
+
+```
+
+Note that every time you perform something in octave using the command line then the number written just after the colon and the phrase octave should change to a higher value. 
+
+
