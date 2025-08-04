@@ -6,7 +6,7 @@ This folder contains essential information required to work with GNU Octave, alo
 In general, most Octave code is compatible with MATLAB; however, there are some discrepancies that may arise when transitioning between the two platforms. 
 
 # Trigonometric Functions
-This folder contains the gnu octave /matlab source code on how to plot the basic trigonomertic functions in MATLAB or GNU Octave in the interval of $$0 - 2{\pi}$$. with an increment of $$\frac{\pi}{100}$$ .
+This folder contains the GNU Octave/MATLAB source code on how to plot the basic trigonomertic functions in MATLAB or GNU Octave in the interval of $$0 - 2{\pi}$$. with an increment of $$\frac{\pi}{100}$$ .
 A figure window will appear with 6 plots arranged in a 3x2 grid :
 1. Plot 1: sin(x)
 2. Plot 2: cos(x)
