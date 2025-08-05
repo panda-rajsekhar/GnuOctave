@@ -18,4 +18,5 @@ A figure window will appear with 6 plots arranged in a 3x2 grid :
 # Signals
 This folder contains GNU Octave/MATLAB source code for plotting basic signals in both discrete-time and continuous-time domains.
 The following signals are studied :
-1. Unit Step Function 
+1. Unit Step Function
+2. Unit Impulse Function 
