@@ -21,7 +21,7 @@ ylabel('Amplitude');
 title('Continuous-Time Ramp Signal');
 
 
-%% --- Discrete-Time Ramp Signal ---
+% --- Discrete-Time Ramp Signal ---
 % Define the range of n (sample indices)
 n = -5:5;   % Change range as needed
 
@@ -42,4 +42,5 @@ xlabel('n');
 ylabel('r[n]');
 title('Discrete-Time  Ramp Signal');
 grid on;
+
 
