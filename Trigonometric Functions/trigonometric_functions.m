@@ -1,5 +1,5 @@
 %{
-Here we will create the 2D Plot of basic reigonometric functions like sin, cos, tan, cosec or csc ,sec and cot on the
+Here we will create the 2D Plot of basic trigonometric functions like sin, cos, tan, cosec or csc ,sec and cot on the
 interval of 0 to 2pi and display them using the subplot function in the layout having 3 rows and two coulumns.
 %}
 
