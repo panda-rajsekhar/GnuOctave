@@ -40,5 +40,6 @@ subplot(2,1,2);
 stem(n, ramp, 'filled', 'r');   % Use 'stem' for discrete signals
 xlabel('n');
 ylabel('r[n]');
-title('Discrete-Time Unit Ramp Signal');
+title('Discrete-Time  Ramp Signal');
 grid on;
+
