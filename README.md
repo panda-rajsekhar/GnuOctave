@@ -22,5 +22,5 @@ The following signals are studied :
 2. Unit Impulse Function
 3. Ramp Function
 4. Exponential Function
-5. Complex Exponential Function 
-(We have already plotted the Sinusoidal Function in Trigonometric Functions) 
+5. Complex Exponential Function
+6. Sinusoidal Functions 
