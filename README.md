@@ -24,3 +24,10 @@ The following signals are studied :
 4. Exponential Function
 5. Complex Exponential Function
 6. Sinusoidal Functions 
+
+
+
+
+
+# Miscellaneous
+This folder contains some fun projects that are really capable to tinker with your creative thinking abilities!
