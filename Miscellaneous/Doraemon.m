@@ -8,7 +8,7 @@ axis equal; %It ensures equal scaling on both of the axes
 axis off; %It handles the axis lines and ticks
 title('Doraemon in GNU OCTAVE-MATLAB'); %As the name suggests add the title
 
-%% Colors (we will be defining custom RGB color values to different parts of the subject)
+%Colors (we will be defining custom RGB color values to different parts of the subject)
 blue    = [0.0, 0.6, 1.0];   % Body
 white   = [1, 1, 1];         % Face & belly
 red     = [1, 0, 0];         % Nose
@@ -17,13 +17,13 @@ black   = [0, 0, 0];         % Outline
 
 t = linspace(0, 2*pi, 200); %It generates 200 evenly spaced angles between 0 to 2 pi , which is used to draw circles and ellipses
 
-%% Head (blue)
+% Head (blue)
 fill(0 + 5*cos(t), 0 + 5*sin(t), blue, 'EdgeColor', black, 'LineWidth', 2); %It draws a blue circle with a radius of 5 units centered at the origin , representing the head
 
-%% Face (white)
+% Face (white)
 fill(0 + 4*cos(t), 0 + 4*sin(t), white, 'EdgeColor', black, 'LineWidth', 2); %It draws a smaller white circle with the radius 4 units placed inside the blue circle to represent the face
 
-%% Eyes
+% Eyes
 % We will be drawing ellipses to make the eyes
 fill(-1 + 1*cos(t), 2 + 1.3*sin(t), white, 'EdgeColor', black, 'LineWidth', 1.5);
 fill( 1 + 1*cos(t), 2 + 1.3*sin(t), white, 'EdgeColor', black, 'LineWidth', 1.5);
@@ -32,13 +32,13 @@ fill( 1 + 1*cos(t), 2 + 1.3*sin(t), white, 'EdgeColor', black, 'LineWidth', 1.5)
 fill(-0.5 + 0.3*cos(t), 2 + 0.4*sin(t), black);
 fill( 0.5 + 0.3*cos(t), 2 + 0.4*sin(t), black);
 
-%% Nose (red)
+% Nose (red)
 fill(0 + 0.5*cos(t), 1 + 0.5*sin(t), red, 'EdgeColor', black, 'LineWidth', 1.5);
 
 % Mouth vertical line
 plot([0, 0], [0.5, -1.5], 'k', 'LineWidth', 1.5);
 
-%% Mouth - adjusted for symmetry and position
+% Mouth - adjusted for symmetry and position
 % Vertical line
 plot([0, 0], [0.5, -2.0], 'k', 'LineWidth', 1.5);
 
@@ -51,7 +51,7 @@ plot(smile_center(1) + smile_radius*cos(smile_theta), ...
      'k', 'LineWidth', 2);
 
 
-%% Whiskers - moved lower by 0.5 units
+% Whiskers - moved lower by 0.5 units
 % Left whiskers
 plot([-4, -1.5], [1, 0.5], 'k', 'LineWidth', 1.5);
 plot([-4, -1.5], [0, 0], 'k', 'LineWidth', 1.5);
@@ -61,13 +61,14 @@ plot([4, 1.5], [1, 0.5], 'k', 'LineWidth', 1.5);
 plot([4, 1.5], [0, 0], 'k', 'LineWidth', 1.5);
 plot([4, 1.5], [-1, -0.5], 'k', 'LineWidth', 1.5);
 
-%% Collar
+%Collar
 collar_y = -4.2;
 fill([-3 3 3 -3], [collar_y collar_y -5 -5], red, 'EdgeColor', black, 'LineWidth', 2);
 
-%% Bell
+% Bell
 fill(0 + 0.7*cos(t), -4.7 + 0.7*sin(t), yellow, 'EdgeColor', black, 'LineWidth', 1.5);
 plot([0, 0], [-4.7, -5.3], 'k', 'LineWidth', 2);
 
 hold off;
+
 
