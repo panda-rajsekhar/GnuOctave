@@ -26,8 +26,6 @@ The following signals are studied :
 6. Sinusoidal Functions 
 
 
-
-
-
 # Miscellaneous
 This folder contains some fun projects that are really capable to tinker with your creative thinking abilities!
+1. Doraemon The Cartoon 
