@@ -23,7 +23,8 @@ The following signals are studied :
 3. Ramp Function
 4. Exponential Function
 5. Complex Exponential Function
-6. Sinusoidal Functions 
+6. Sinusoidal Functions
+7. Square Wave Function 
 
 
 # Miscellaneous
