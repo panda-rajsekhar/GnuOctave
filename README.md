@@ -24,8 +24,13 @@ The following signals are studied :
 4. Exponential Function
 5. Complex Exponential Function
 6. Sinusoidal Functions
-7. Square Wave Function 
+7. Square Wave Function
 
+# Fibonacci
+This folder contains the code to generate fibbonacci sequence based on the user input. The user inpus the value upto which the sequence will be generated and then it gives the output of the code.
+
+# Matrix
+This folder contains the list of all the sample functions that can be performed on the matrix using gnu octave 
 
 # Miscellaneous
 This folder contains some fun projects that are really capable to tinker with your creative thinking abilities!
