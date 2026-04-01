@@ -35,3 +35,10 @@ This folder contains the list of all the sample functions that can be performed 
 # Miscellaneous
 This folder contains some fun projects that are really capable to tinker with your creative thinking abilities!
 1. Doraemon The Cartoon : In this program, we created the facial structure of the popular cartoon character Doraemon using mathematical shapes such as circles, ellipses, and sloped straight lines, along with custom colors to give the figure a more realistic appearance.
+
+
+
+
+
+
+The readme is yet to be updated 
