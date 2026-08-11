@@ -52,26 +52,44 @@ stem(n, x_sign, "a", 'filled');
 
 ![Basic Discrete Signals](assets/Discrete_Basic_Sig.png)
 
-```
-=====================================================================================
- SIGNAL CLASSIFICATION TABLE (n = -20 to 20)
-=====================================================================================
-Signal                   | Time Type    | Symmetry       | Energy/Power Classification   
--------------------------------------------------------------------------------------
-Unit Impulse \delta[n]   | Discrete     | Even           | Power Signal (P=0.024)        
-Unit Step u[n]           | Discrete     | Neither        | Power Signal (P=0.512)        
-Unit Ramp r[n]           | Discrete     | Neither        | Neither (Growing, E=2870.000) 
-Sinusoidal Signal        | Discrete     | Odd            | Neither (Growing, E=20.000)   
-Exponential Signal       | Discrete     | Neither        | Neither (Growing, E=20897.677)
-Signum Signal            | Discrete     | Odd            | Neither (Growing, E=40.000)   
-=====================================================================================
-Note: Unit Ramp diverges as n -> infinity (neither finite energy nor finite power).
-Note: Exponential (0.8)^n is shown for a finite window; as n -> -infinity it diverges,
-      so strictly it is neither an energy nor a power signal over all n. A causal
-      version (0.8)^n * u[n] would instead be a finite-energy signal.
-=====================================================================================
 
->>
+```
+
+===============================================================================================
+                         SIGNAL CLASSIFICATION TABLE
+===============================================================================================
+Signal                    | Time Type    | Symmetry     | Periodicity          | Energy / Power           
+-----------------------------------------------------------------------------------------------
+Unit Impulse \delta[n]    | Discrete     | Even         | Non-Periodic         | Energy Signal            
+Unit Step u[n]            | Discrete     | Neither      | Non-Periodic         | Power Signal             
+Unit Ramp r[n]            | Discrete     | Neither      | Non-Periodic         | Neither                  
+Sinusoidal Signal         | Discrete     | Odd          | Periodic (N = 10)    | Power Signal             
+Exponential Signal        | Discrete     | Neither      | Non-Periodic         | Neither                  
+Signum Signal             | Discrete     | Odd          | Non-Periodic         | Power Signal             
+===============================================================================================
+
+THEORETICAL PARAMETERS
+===============================================================================================
+Unit Impulse : E = 1, P = 0
+Unit Step    : E = infinity, P = 1
+Unit Ramp    : E = infinity, P = infinity -> Neither
+Sinusoid     : P = 0.5, Fundamental Period N0 = 10
+Exponential  : x[n] = (0.8)^n -> Unbounded as n -> -infinity -> Neither
+Signum       : E = infinity, P = 1
+===============================================================================================
+
+NOTES:
+1. Unit Impulse is an even energy signal.
+2. Unit Step is a power signal because its average power is finite.
+3. Unit Ramp is neither an energy nor a power signal.
+4. sin(0.2*pi*n) is periodic with fundamental period N0 = 10.
+5. The two-sided exponential (0.8)^n is unbounded as n -> -infinity.
+6. Signum signal is an odd power signal.
+
+Experiment 01 completed successfully.
+>> 
+
+
 ```
 
 
