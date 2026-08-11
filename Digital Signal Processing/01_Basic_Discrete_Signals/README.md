@@ -52,6 +52,29 @@ stem(n, x_sign, "a", 'filled');
 
 ![Basic Discrete Signals](assets/Discrete_Basic_Sig.png)
 
+```
+=====================================================================================
+ SIGNAL CLASSIFICATION TABLE (n = -20 to 20)
+=====================================================================================
+Signal                   | Time Type    | Symmetry       | Energy/Power Classification   
+-------------------------------------------------------------------------------------
+Unit Impulse \delta[n]   | Discrete     | Even           | Power Signal (P=0.024)        
+Unit Step u[n]           | Discrete     | Neither        | Power Signal (P=0.512)        
+Unit Ramp r[n]           | Discrete     | Neither        | Neither (Growing, E=2870.000) 
+Sinusoidal Signal        | Discrete     | Odd            | Neither (Growing, E=20.000)   
+Exponential Signal       | Discrete     | Neither        | Neither (Growing, E=20897.677)
+Signum Signal            | Discrete     | Odd            | Neither (Growing, E=40.000)   
+=====================================================================================
+Note: Unit Ramp diverges as n -> infinity (neither finite energy nor finite power).
+Note: Exponential (0.8)^n is shown for a finite window; as n -> -infinity it diverges,
+      so strictly it is neither an energy nor a power signal over all n. A causal
+      version (0.8)^n * u[n] would instead be a finite-energy signal.
+=====================================================================================
+
+>>
+```
+
+
 Reading left→right, top→bottom: unit impulse (single spike at n=0), unit step (0 then flat at 1), unit ramp (0 then linearly increasing), sinusoid (oscillating between ±1 with 10-sample period), exponential (decaying from ~88 down to ~0 as n goes from -20 to 20), and signum (-1 for n<0, 0 at n=0, +1 for n>0 — shown with hollow markers due to the `"a"` bug above).
 
 ---
@@ -88,6 +111,21 @@ Same pattern as the first script: `stem(n, signal, 'color', 'filled')` across a 
 ### 3.4 Result
 
 ![Trigonometric Signals](assets/Discrete_Trigo.png)
+
+```
+=================================================================
+ SIGNAL CLASSIFICATION TABLE (n = -15 to 15)
+=================================================================
+Signal   | Time Type    | Symmetry       | Energy/Power Classification   
+-----------------------------------------------------------------
+Sin(n)   | Discrete     | Odd            | Power Signal (P=0.508)        
+Cos(n)   | Discrete     | Even           | Power Signal (P=0.492)        
+Tan(n)   | Discrete     | Odd            | Power Signal (P=3301.633)     
+Sec(n)   | Discrete     | Even           | Power Signal (P=3302.633)     
+Csc(n)   | Discrete     | Odd            | Neither (Unbounded)           
+Cot(n)   | Discrete     | Odd            | Neither (Unbounded)           
+=================================================================
+```
 
 Sin(n) and Cos(n) look "noisy" rather than smoothly periodic — again, this is because the sampling interval (1 radian) isn't matched to their period (2π), so consecutive samples land at essentially uncorrelated phase points. Tan(n) and Sec(n) both show sharp spikes to roughly ±225 at n = ±11 (near-singularity from cos(n) ≈ 0), while Csc(n) and Cot(n) show smaller spikes (~±7) near n = ±3 (near-singularity from sin(n) ≈ 0).
 
