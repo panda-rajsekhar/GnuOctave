@@ -131,18 +131,35 @@ Same pattern as the first script: `stem(n, signal, 'color', 'filled')` across a 
 ![Trigonometric Signals](assets/Discrete_Trigo.png)
 
 ```
-=================================================================
- SIGNAL CLASSIFICATION TABLE (n = -15 to 15)
-=================================================================
-Signal   | Time Type    | Symmetry       | Energy/Power Classification   
------------------------------------------------------------------
-Sin(n)   | Discrete     | Odd            | Power Signal (P=0.508)        
-Cos(n)   | Discrete     | Even           | Power Signal (P=0.492)        
-Tan(n)   | Discrete     | Odd            | Power Signal (P=3301.633)     
-Sec(n)   | Discrete     | Even           | Power Signal (P=3302.633)     
-Csc(n)   | Discrete     | Odd            | Neither (Unbounded)           
-Cot(n)   | Discrete     | Odd            | Neither (Unbounded)           
-=================================================================
+
+===============================================================================================
+                    TRIGONOMETRIC SIGNAL CLASSIFICATION TABLE
+===============================================================================================
+Signal     | Time Type    | Symmetry       | Periodicity        | Energy / Power                
+-----------------------------------------------------------------------------------------------
+Sin(n)     | Discrete     | Odd            | Non-Periodic       | Neither                       
+Cos(n)     | Discrete     | Even           | Non-Periodic       | Neither                       
+Tan(n)     | Discrete     | Odd            | Non-Periodic       | Neither                       
+Sec(n)     | Discrete     | Even           | Non-Periodic       | Neither                       
+Csc(n)     | Discrete     | Odd            | Non-Periodic       | Neither                       
+Cot(n)     | Discrete     | Odd            | Non-Periodic       | Neither                       
+===============================================================================================
+
+THEORETICAL NOTES
+===============================================================================================
+1. sin(n) is an odd, non-periodic discrete-time signal.
+2. cos(n) is an even, non-periodic discrete-time signal.
+3. tan(n) is an odd, non-periodic discrete-time signal.
+4. sec(n) is an even, non-periodic discrete-time signal.
+5. csc(n) is an odd, non-periodic discrete-time signal.
+6. cot(n) is an odd, non-periodic discrete-time signal.
+
+Energy/Power classification is based on the theoretical infinite-duration
+definitions rather than the finite plotting interval n = -15 to 15.
+===============================================================================================
+
+Experiment 01 completed successfully.
+>>
 ```
 
 Sin(n) and Cos(n) look "noisy" rather than smoothly periodic — again, this is because the sampling interval (1 radian) isn't matched to their period (2π), so consecutive samples land at essentially uncorrelated phase points. Tan(n) and Sec(n) both show sharp spikes to roughly ±225 at n = ±11 (near-singularity from cos(n) ≈ 0), while Csc(n) and Cot(n) show smaller spikes (~±7) near n = ±3 (near-singularity from sin(n) ≈ 0).
